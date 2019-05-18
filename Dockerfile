@@ -1,8 +1,9 @@
-FROM ubuntu:16.04 
+FROM ubuntu:16.04
 
 # Install the packages we need. Avahi will be included
 RUN apt-get update && apt-get install -y \
 	cups \
+	printer-driver-all \
 	cups-pdf \
 	inotify-tools \
 	python-cups \
